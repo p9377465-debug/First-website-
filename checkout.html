@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html lang="en"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Checkout | VoltCart</title><link rel="stylesheet" href="css/style.css"></head>
+<body data-page="checkout"><header id="hdr"></header>
+<main>
+<h1>Checkout</h1><div class="two"><div class="box"><form id="f">
+<div><label for="cname">Full name</label><input id="cname" required></div>
+<div><label for="phone">Phone number</label><input id="phone" type="tel" pattern="[0-9]{10}" title="10-digit mobile number" required></div>
+<div><label for="addr">Delivery address</label><input id="addr" required></div>
+<div><label for="pay">Payment method</label><select id="pay"><option>Cash on delivery</option><option>UPI (demo)</option><option>Card (demo)</option></select></div>
+<button class="btn">Place order</button></form></div><div class="box sum"><h3>Order summary</h3><div id="sum"></div></div></div>
+</main>
+<footer>VoltCart · College project demo store · No real payments</footer>
+<div id="toast" role="status"></div>
+<script src="js/data.js"></script><script src="js/app.js"></script></body></html>
